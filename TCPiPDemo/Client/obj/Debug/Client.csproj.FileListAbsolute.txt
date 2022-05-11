@@ -1,0 +1,13 @@
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\bin\Debug\Client.exe.config
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\bin\Debug\Client.exe
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\bin\Debug\Client.pdb
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\bin\Debug\SimpleTCP.dll
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.Form1.resources
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.exe
+C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.pdb

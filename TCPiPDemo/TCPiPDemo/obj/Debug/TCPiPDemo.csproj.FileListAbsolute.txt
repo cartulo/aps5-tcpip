@@ -1,0 +1,13 @@
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\bin\Debug\TCPiPDemo.exe.config
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\bin\Debug\TCPiPDemo.exe
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\bin\Debug\TCPiPDemo.pdb
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\bin\Debug\SimpleTCP.dll
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.csproj.AssemblyReference.cache
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.csproj.SuggestedBindingRedirects.cache
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.Form1.resources
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.Properties.Resources.resources
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.csproj.GenerateResource.cache
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.csproj.CoreCompileInputs.cache
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.csproj.CopyComplete
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.exe
+C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.pdb
