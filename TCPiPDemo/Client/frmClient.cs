@@ -5,23 +5,35 @@ using System.Windows.Forms;
 
 namespace Client
 {
-    public partial class Form1 : Form
+    public partial class frmClient : Form
     {
-        public Form1()
+        public frmClient()
         {
             InitializeComponent();
         }
 
         SimpleTcpClient client;
 
-        private void btnConnect_Click(object sender, EventArgs e)
+        private void btnConectar_Click(object sender, EventArgs e)
         {
-            btnConnect.Enabled = false;
+            btnConectar.Enabled = false;
+            btnDesconectar.Enabled = true;
+            txtMensagem.Enabled = true;
             txtHost.ReadOnly = true;
             txtPort.ReadOnly = true;
-            //Connect to server
             client.Connect(txtHost.Text, Convert.ToInt32(txtPort.Text));
             txtStatus.Text += "Conectado ao servidor.\r\n";
+        }
+
+        private void btnDesconectar_Click(object sender, EventArgs e)
+        {
+            client.Disconnect();
+            txtStatus.Text += "Desconectado do servidor com sucesso.\r\n";
+            btnConectar.Enabled = true;
+            btnDesconectar.Enabled = false;
+            txtMensagem.Enabled = false;
+            txtHost.ReadOnly = false;
+            txtPort.ReadOnly = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -39,14 +51,15 @@ namespace Client
             });
         }
 
-        private void btnSend_Click(object sender, EventArgs e)
+        private void btnEnviar_Click(object sender, EventArgs e)
         {
-            client.WriteLineAndGetReply(txtMessage.Text, TimeSpan.FromSeconds(3));
+            client.WriteLineAndGetReply(txtMensagem.Text, TimeSpan.FromSeconds(3));
         }
 
-        private void txtMessage_TextChanged(object sender, EventArgs e)
+        private void txtMensagem_TextChanged(object sender, EventArgs e)
         {
 
         }
+
     }
 }

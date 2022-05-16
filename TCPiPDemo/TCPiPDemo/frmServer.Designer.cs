@@ -2,7 +2,7 @@
 
 namespace TCPIPDemo
 {
-    partial class Form1
+    partial class frmServer
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -30,8 +30,8 @@ namespace TCPIPDemo
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnStart = new System.Windows.Forms.Button();
-            this.btnStop = new System.Windows.Forms.Button();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.btnParar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtHost = new System.Windows.Forms.TextBox();
             this.txtPort = new System.Windows.Forms.TextBox();
@@ -39,25 +39,26 @@ namespace TCPIPDemo
             this.txtStatus = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // btnStart
+            // btnIniciar
             // 
-            this.btnStart.Location = new System.Drawing.Point(335, 4);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 23);
-            this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            this.btnIniciar.Location = new System.Drawing.Point(335, 4);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(75, 23);
+            this.btnIniciar.TabIndex = 0;
+            this.btnIniciar.Text = "Iniciar";
+            this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
-            // btnStop
+            // btnParar
             // 
-            this.btnStop.Location = new System.Drawing.Point(416, 4);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(75, 23);
-            this.btnStop.TabIndex = 1;
-            this.btnStop.Text = "Stop";
-            this.btnStop.UseVisualStyleBackColor = true;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            this.btnParar.Enabled = false;
+            this.btnParar.Location = new System.Drawing.Point(416, 4);
+            this.btnParar.Name = "btnParar";
+            this.btnParar.Size = new System.Drawing.Size(75, 23);
+            this.btnParar.TabIndex = 1;
+            this.btnParar.Text = "Parar";
+            this.btnParar.UseVisualStyleBackColor = true;
+            this.btnParar.Click += new System.EventHandler(this.btnParar_Click);
             // 
             // label1
             // 
@@ -101,8 +102,9 @@ namespace TCPIPDemo
             this.txtStatus.ReadOnly = true;
             this.txtStatus.Size = new System.Drawing.Size(438, 157);
             this.txtStatus.TabIndex = 6;
+            this.txtStatus.TextChanged += new System.EventHandler(this.txtStatus_TextChanged);
             // 
-            // Form1
+            // frmServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -112,9 +114,10 @@ namespace TCPIPDemo
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtHost);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnStop);
-            this.Controls.Add(this.btnStart);
-            this.Name = "Form1";
+            this.Controls.Add(this.btnParar);
+            this.Controls.Add(this.btnIniciar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "frmServer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Server";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -125,13 +128,13 @@ namespace TCPIPDemo
 
         #endregion
 
-        private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHost;
         private System.Windows.Forms.TextBox txtPort;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtStatus;
+        private System.Windows.Forms.Button btnParar;
     }
 }
 

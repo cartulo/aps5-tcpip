@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace TCPIPDemo
 {
-    public partial class Form1 : Form
+    public partial class frmServer : Form
     {
-        public Form1()
+        public frmServer()
         {
             InitializeComponent();
         }
@@ -30,18 +30,34 @@ namespace TCPIPDemo
             });
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
+        private void btnIniciar_Click(object sender, EventArgs e)
         {
+            btnIniciar.Enabled = false;
+            btnParar.Enabled = true;
+            txtHost.ReadOnly = true;
+            txtPort.ReadOnly = true;
             txtStatus.Text += "Iniciando servidor...\r\n";
+
             System.Net.IPAddress ip = System.Net.IPAddress.Parse(txtHost.Text);
             server.Start(ip, Convert.ToInt32(txtPort.Text));
             txtStatus.Text += "Servidor iniciado\r\n";
         }
 
-        private void btnStop_Click(object sender, EventArgs e)
+        private void btnParar_Click(object sender, EventArgs e)
         {
-            if (server.IsStarted)
+            if (server.IsStarted) {  
                 server.Stop();
+                txtStatus.Text += "Servidor encerrado\r\n";
+                btnIniciar.Enabled = true;
+                btnParar.Enabled = false;
+                txtHost.ReadOnly = false;
+                txtPort.ReadOnly = false;
+            }
+        }
+
+        private void txtStatus_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
