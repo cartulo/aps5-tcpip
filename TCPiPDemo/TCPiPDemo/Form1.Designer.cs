@@ -47,6 +47,7 @@ namespace TCPIPDemo
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnStop
             // 
@@ -56,6 +57,7 @@ namespace TCPIPDemo
             this.btnStop.TabIndex = 1;
             this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // label1
             // 
@@ -65,7 +67,6 @@ namespace TCPIPDemo
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Host:";
-            
             // 
             // txtHost
             // 
@@ -99,7 +100,6 @@ namespace TCPIPDemo
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Size = new System.Drawing.Size(438, 157);
             this.txtStatus.TabIndex = 6;
-            
             // 
             // Form1
             // 

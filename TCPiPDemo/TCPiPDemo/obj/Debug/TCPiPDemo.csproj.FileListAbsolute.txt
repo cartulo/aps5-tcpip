@@ -11,3 +11,16 @@ C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.csproj.CoreC
 C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.csproj.CopyComplete
 C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.exe
 C:\Users\gilbe\source\repos\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.pdb
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\bin\Debug\TCPiPDemo.exe.config
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\bin\Debug\TCPiPDemo.exe
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\bin\Debug\TCPiPDemo.pdb
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\bin\Debug\SimpleTCP.dll
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.AssemblyReference.cache
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.SuggestedBindingRedirects.cache
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.Form1.resources
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.Properties.Resources.resources
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.GenerateResource.cache
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.CoreCompileInputs.cache
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.CopyComplete
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.exe
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.pdb

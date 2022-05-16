@@ -11,3 +11,16 @@ C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.csproj.CoreCompile
 C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.csproj.CopyComplete
 C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.exe
 C:\Users\gilbe\source\repos\TCPiPDemo\Client\obj\Debug\Client.pdb
+D:\aps5-tcpip\TCPiPDemo\Client\bin\Debug\Client.exe.config
+D:\aps5-tcpip\TCPiPDemo\Client\bin\Debug\Client.exe
+D:\aps5-tcpip\TCPiPDemo\Client\bin\Debug\Client.pdb
+D:\aps5-tcpip\TCPiPDemo\Client\bin\Debug\SimpleTCP.dll
+D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.Form1.resources
+D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.Properties.Resources.resources
+D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.CopyComplete
+D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.exe
+D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.pdb
