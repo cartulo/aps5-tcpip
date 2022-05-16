@@ -98,6 +98,7 @@
             // btnEnviar
             // 
             this.btnEnviar.AccessibleName = "";
+            this.btnEnviar.Enabled = false;
             this.btnEnviar.Location = new System.Drawing.Point(404, 94);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(75, 23);
@@ -126,6 +127,7 @@
             // 
             // btnDesconectar
             // 
+            this.btnDesconectar.Enabled = false;
             this.btnDesconectar.Location = new System.Drawing.Point(402, 10);
             this.btnDesconectar.Name = "btnDesconectar";
             this.btnDesconectar.Size = new System.Drawing.Size(85, 23);
@@ -166,10 +168,10 @@
         private System.Windows.Forms.Label lblHost;
         private System.Windows.Forms.Button btnConectar;
         private System.Windows.Forms.TextBox txtMensagem;
-        private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.Label lblMensagem;
         private System.Windows.Forms.Button btnDesconectar;
+        private System.Windows.Forms.Button btnEnviar;
     }
 }
 

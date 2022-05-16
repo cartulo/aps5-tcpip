@@ -18,6 +18,7 @@ namespace Client
         {
             btnConectar.Enabled = false;
             btnDesconectar.Enabled = true;
+            btnEnviar.Enabled = true;
             txtMensagem.Enabled = true;
             txtHost.ReadOnly = true;
             txtPort.ReadOnly = true;
@@ -31,6 +32,7 @@ namespace Client
             txtStatus.Text += "Desconectado do servidor com sucesso.\r\n";
             btnConectar.Enabled = true;
             btnDesconectar.Enabled = false;
+            btnEnviar.Enabled = false;
             txtMensagem.Enabled = false;
             txtHost.ReadOnly = false;
             txtPort.ReadOnly = false;
