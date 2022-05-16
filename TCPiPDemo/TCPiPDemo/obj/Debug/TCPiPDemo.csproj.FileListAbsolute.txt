@@ -24,3 +24,16 @@ D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.CoreCompileInputs.c
 D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.CopyComplete
 D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.exe
 D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.pdb
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\bin\Debug\TCPiPDemo.exe.config
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\bin\Debug\TCPiPDemo.exe
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\bin\Debug\TCPiPDemo.pdb
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\bin\Debug\SimpleTCP.dll
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.AssemblyReference.cache
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.SuggestedBindingRedirects.cache
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.Form1.resources
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.Properties.Resources.resources
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.GenerateResource.cache
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.CoreCompileInputs.cache
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.CopyComplete
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.exe
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.pdb

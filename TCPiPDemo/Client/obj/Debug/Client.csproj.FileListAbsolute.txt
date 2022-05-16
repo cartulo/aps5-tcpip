@@ -24,3 +24,16 @@ D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
 D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.CopyComplete
 D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.exe
 D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.pdb
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\bin\Debug\Client.exe.config
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\bin\Debug\Client.exe
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\bin\Debug\Client.pdb
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\bin\Debug\SimpleTCP.dll
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.Form1.resources
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.exe
+C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.pdb

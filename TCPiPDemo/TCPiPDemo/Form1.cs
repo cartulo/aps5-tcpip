@@ -16,28 +16,26 @@ namespace TCPIPDemo
         private void Form1_Load(object sender, EventArgs e)
         {
             server = new SimpleTcpServer();
-            server.Delimiter = 0x13;//enter
+            server.Delimiter = 0x13;
             server.StringEncoder = Encoding.UTF8;
             server.DataReceived += Server_DataReceived;
         }
 
         private void Server_DataReceived(object sender, SimpleTCP.Message e)
         {
-            //Update mesage to txtStatus
             txtStatus.Invoke((MethodInvoker)delegate ()
             {
                 txtStatus.Text += e.MessageString;
-                e.ReplyLine(string.Format("\nVoce disse: {0}", e.MessageString));
+                e.ReplyLine(string.Format("Voce disse: {0}\r\n", e.MessageString));
             });
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            //Start server host
-            txtStatus.Text += "Iniciando servidor...";
+            txtStatus.Text += "Iniciando servidor...\r\n";
             System.Net.IPAddress ip = System.Net.IPAddress.Parse(txtHost.Text);
             server.Start(ip, Convert.ToInt32(txtPort.Text));
-            txtStatus.Text = "Servidor rodando";
+            txtStatus.Text += "Servidor rodando\r\n";
         }
 
         private void btnStop_Click(object sender, EventArgs e)
