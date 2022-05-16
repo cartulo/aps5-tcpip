@@ -17,8 +17,11 @@ namespace Client
         private void btnConnect_Click(object sender, EventArgs e)
         {
             btnConnect.Enabled = false;
+            txtHost.ReadOnly = true;
+            txtPort.ReadOnly = true;
             //Connect to server
             client.Connect(txtHost.Text, Convert.ToInt32(txtPort.Text));
+            txtStatus.Text += "Conectado ao servidor.\r\n";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -30,7 +33,6 @@ namespace Client
 
         private void Client_DataReceived(object sender, SimpleTCP.Message e)
         {
-            //Update message to txtStatus
             txtStatus.Invoke((MethodInvoker)delegate ()
             {
                 txtStatus.Text += e.MessageString;
@@ -40,6 +42,11 @@ namespace Client
         private void btnSend_Click(object sender, EventArgs e)
         {
             client.WriteLineAndGetReply(txtMessage.Text, TimeSpan.FromSeconds(3));
+        }
+
+        private void txtMessage_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

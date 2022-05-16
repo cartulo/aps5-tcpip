@@ -90,6 +90,7 @@
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.Size = new System.Drawing.Size(431, 49);
             this.txtMessage.TabIndex = 11;
+            this.txtMessage.TextChanged += new System.EventHandler(this.txtMessage_TextChanged);
             // 
             // btnSend
             // 
@@ -107,6 +108,7 @@
             this.txtStatus.Location = new System.Drawing.Point(48, 123);
             this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
+            this.txtStatus.ReadOnly = true;
             this.txtStatus.Size = new System.Drawing.Size(431, 147);
             this.txtStatus.TabIndex = 13;
             // 

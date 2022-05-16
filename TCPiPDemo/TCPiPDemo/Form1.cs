@@ -25,8 +25,8 @@ namespace TCPIPDemo
         {
             txtStatus.Invoke((MethodInvoker)delegate ()
             {
-                txtStatus.Text += e.MessageString;
-                e.ReplyLine(string.Format("Voce disse: {0}\r\n", e.MessageString));
+                txtStatus.Text += "\r\nEu digitei:" + e.MessageString;
+                e.ReplyLine(string.Format("Você disse: {0}\r\n", e.MessageString));
             });
         }
 
@@ -35,7 +35,7 @@ namespace TCPIPDemo
             txtStatus.Text += "Iniciando servidor...\r\n";
             System.Net.IPAddress ip = System.Net.IPAddress.Parse(txtHost.Text);
             server.Start(ip, Convert.ToInt32(txtPort.Text));
-            txtStatus.Text += "Servidor rodando\r\n";
+            txtStatus.Text += "Servidor iniciado\r\n";
         }
 
         private void btnStop_Click(object sender, EventArgs e)

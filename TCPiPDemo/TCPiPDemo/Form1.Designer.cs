@@ -98,6 +98,7 @@ namespace TCPIPDemo
             this.txtStatus.Location = new System.Drawing.Point(53, 33);
             this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
+            this.txtStatus.ReadOnly = true;
             this.txtStatus.Size = new System.Drawing.Size(438, 157);
             this.txtStatus.TabIndex = 6;
             // 
