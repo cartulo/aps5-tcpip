@@ -102,7 +102,6 @@ namespace TCPIPDemo
             this.txtStatus.ReadOnly = true;
             this.txtStatus.Size = new System.Drawing.Size(438, 157);
             this.txtStatus.TabIndex = 6;
-            this.txtStatus.TextChanged += new System.EventHandler(this.txtStatus_TextChanged);
             // 
             // frmServer
             // 

@@ -17,7 +17,6 @@ D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\bin\Debug\TCPiPDemo.pdb
 D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\bin\Debug\SimpleTCP.dll
 D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.AssemblyReference.cache
 D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.SuggestedBindingRedirects.cache
-D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.Form1.resources
 D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.Properties.Resources.resources
 D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.GenerateResource.cache
 D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.csproj.CoreCompileInputs.cache
@@ -37,3 +36,4 @@ C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta 
 C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.exe
 C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPiPDemo.pdb
 C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.frmServer.resources
+D:\aps5-tcpip\TCPiPDemo\TCPiPDemo\obj\Debug\TCPIPDemo.frmServer.resources

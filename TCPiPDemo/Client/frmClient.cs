@@ -16,14 +16,25 @@ namespace Client
 
         private void btnConectar_Click(object sender, EventArgs e)
         {
-            btnConectar.Enabled = false;
-            btnDesconectar.Enabled = true;
-            btnEnviar.Enabled = true;
-            txtMensagem.Enabled = true;
-            txtHost.ReadOnly = true;
-            txtPort.ReadOnly = true;
-            client.Connect(txtHost.Text, Convert.ToInt32(txtPort.Text));
-            txtStatus.Text += "Conectado ao servidor.\r\n";
+            try
+            {
+                btnConectar.Enabled = false;
+                client.Connect(txtHost.Text, Convert.ToInt32(txtPort.Text));
+                btnDesconectar.Enabled = true;
+                btnEnviar.Enabled = true;
+                txtMensagem.Enabled = true;
+                txtHost.ReadOnly = true;
+                txtPort.ReadOnly = true;
+                btnAlerta.Enabled = true;
+                btnPerigo.Enabled = true;
+
+                txtStatus.Text += "Conectado ao servidor.\r\n";
+            } catch
+            {
+                btnConectar.Enabled = true;
+                btnDesconectar.Enabled = false;
+                MessageBox.Show("Chat inexistente");
+            }
         }
 
         private void btnDesconectar_Click(object sender, EventArgs e)
@@ -50,18 +61,29 @@ namespace Client
             txtStatus.Invoke((MethodInvoker)delegate ()
             {
                 txtStatus.Text += e.MessageString;
+
+                int linhas = txtStatus.Lines.Length - 3;
+
+                if (linhas >= 9)
+                {
+                    txtStatus.ScrollBars = ScrollBars.Vertical;
+                }
             });
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            client.WriteLineAndGetReply(txtMensagem.Text, TimeSpan.FromSeconds(3));
+            client.WriteLineAndGetReply(txtMensagem.Text, TimeSpan.FromSeconds(0));
         }
 
-        private void txtMensagem_TextChanged(object sender, EventArgs e)
+        private void btnPerigo_Click(object sender, EventArgs e)
         {
-
+            client.WriteLineAndGetReply("Cuidade!", TimeSpan.FromSeconds(0));
         }
 
+        private void btnAlerta_Click(object sender, EventArgs e)
+        {
+            client.WriteLineAndGetReply("Alerte", TimeSpan.FromSeconds(0));
+        }
     }
 }

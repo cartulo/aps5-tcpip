@@ -25,22 +25,36 @@ namespace TCPIPDemo
         {
             txtStatus.Invoke((MethodInvoker)delegate ()
             {
-                txtStatus.Text += "\r\nEu digitei:" + e.MessageString;
-                e.ReplyLine(string.Format("Você disse: {0}\r\n", e.MessageString));
+                txtStatus.Text += "\r\nVocê disse: " + e.MessageString;
+                e.ReplyLine(string.Format("\r\nEu digitei: {0}\r\n", e.MessageString));
+
+                int linhas = txtStatus.Lines.Length - 3;
+
+                if (linhas >= 9)
+                {
+                    txtStatus.ScrollBars = ScrollBars.Vertical;
+                    txtStatus.WordWrap = true;
+                }
             });
         }
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            btnIniciar.Enabled = false;
-            btnParar.Enabled = true;
-            txtHost.ReadOnly = true;
-            txtPort.ReadOnly = true;
-            txtStatus.Text += "Iniciando servidor...\r\n";
+            try
+            {
+                btnIniciar.Enabled = false;
+                btnParar.Enabled = true;
+                txtHost.ReadOnly = true;
+                txtPort.ReadOnly = true;
+                txtStatus.Text += "Iniciando servidor...\r\n";
 
-            System.Net.IPAddress ip = System.Net.IPAddress.Parse(txtHost.Text);
-            server.Start(ip, Convert.ToInt32(txtPort.Text));
-            txtStatus.Text += "Servidor iniciado\r\n";
+                System.Net.IPAddress ip = System.Net.IPAddress.Parse(txtHost.Text);
+                server.Start(ip, Convert.ToInt32(txtPort.Text));
+                txtStatus.Text += "Servidor iniciado\r\n";
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnParar_Click(object sender, EventArgs e)
@@ -53,11 +67,6 @@ namespace TCPIPDemo
                 txtHost.ReadOnly = false;
                 txtPort.ReadOnly = false;
             }
-        }
-
-        private void txtStatus_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

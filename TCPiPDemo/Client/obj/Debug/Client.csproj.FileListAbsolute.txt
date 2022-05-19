@@ -17,7 +17,6 @@ D:\aps5-tcpip\TCPiPDemo\Client\bin\Debug\Client.pdb
 D:\aps5-tcpip\TCPiPDemo\Client\bin\Debug\SimpleTCP.dll
 D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.AssemblyReference.cache
 D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
-D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.Form1.resources
 D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.Properties.Resources.resources
 D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.GenerateResource.cache
 D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
@@ -37,3 +36,4 @@ C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta 
 C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.exe
 C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.pdb
 C:\Users\gilbe\Documents\Faculdade\5Sem\APS - Desenvolvimento de uma ferramenta para comunicação em rede\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.frmClient.resources
+D:\aps5-tcpip\TCPiPDemo\Client\obj\Debug\Client.frmClient.resources

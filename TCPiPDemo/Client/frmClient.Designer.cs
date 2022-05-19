@@ -38,6 +38,8 @@
             this.txtStatus = new System.Windows.Forms.TextBox();
             this.lblMensagem = new System.Windows.Forms.Label();
             this.btnDesconectar = new System.Windows.Forms.Button();
+            this.btnPerigo = new System.Windows.Forms.Button();
+            this.btnAlerta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtPort
@@ -93,7 +95,6 @@
             this.txtMensagem.Name = "txtMensagem";
             this.txtMensagem.Size = new System.Drawing.Size(378, 49);
             this.txtMensagem.TabIndex = 11;
-            this.txtMensagem.TextChanged += new System.EventHandler(this.txtMensagem_TextChanged);
             // 
             // btnEnviar
             // 
@@ -109,11 +110,11 @@
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(48, 123);
+            this.txtStatus.Location = new System.Drawing.Point(10, 123);
             this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.ReadOnly = true;
-            this.txtStatus.Size = new System.Drawing.Size(431, 147);
+            this.txtStatus.Size = new System.Drawing.Size(477, 147);
             this.txtStatus.TabIndex = 13;
             // 
             // lblMensagem
@@ -136,11 +137,43 @@
             this.btnDesconectar.UseVisualStyleBackColor = true;
             this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
+            // btnPerigo
+            // 
+            this.btnPerigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
+            this.btnPerigo.Enabled = false;
+            this.btnPerigo.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnPerigo.FlatAppearance.BorderSize = 0;
+            this.btnPerigo.ForeColor = System.Drawing.Color.Transparent;
+            this.btnPerigo.Location = new System.Drawing.Point(10, 276);
+            this.btnPerigo.Name = "btnPerigo";
+            this.btnPerigo.Size = new System.Drawing.Size(75, 31);
+            this.btnPerigo.TabIndex = 16;
+            this.btnPerigo.Text = "Perigo";
+            this.btnPerigo.UseVisualStyleBackColor = false;
+            this.btnPerigo.Click += new System.EventHandler(this.btnPerigo_Click);
+            // 
+            // btnAlerta
+            // 
+            this.btnAlerta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
+            this.btnAlerta.Enabled = false;
+            this.btnAlerta.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAlerta.FlatAppearance.BorderSize = 0;
+            this.btnAlerta.ForeColor = System.Drawing.Color.Transparent;
+            this.btnAlerta.Location = new System.Drawing.Point(91, 276);
+            this.btnAlerta.Name = "btnAlerta";
+            this.btnAlerta.Size = new System.Drawing.Size(75, 31);
+            this.btnAlerta.TabIndex = 17;
+            this.btnAlerta.Text = "Alerta";
+            this.btnAlerta.UseVisualStyleBackColor = false;
+            this.btnAlerta.Click += new System.EventHandler(this.btnAlerta_Click);
+            // 
             // frmClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 290);
+            this.ClientSize = new System.Drawing.Size(499, 315);
+            this.Controls.Add(this.btnAlerta);
+            this.Controls.Add(this.btnPerigo);
             this.Controls.Add(this.btnDesconectar);
             this.Controls.Add(this.lblMensagem);
             this.Controls.Add(this.txtStatus);
@@ -172,6 +205,8 @@
         private System.Windows.Forms.Label lblMensagem;
         private System.Windows.Forms.Button btnDesconectar;
         private System.Windows.Forms.Button btnEnviar;
+        private System.Windows.Forms.Button btnPerigo;
+        private System.Windows.Forms.Button btnAlerta;
     }
 }
 
