@@ -13,6 +13,7 @@ namespace Client
         }
 
         SimpleTcpClient client;
+        string nome = "";
 
         private void btnConectar_Click(object sender, EventArgs e)
         {
@@ -20,13 +21,13 @@ namespace Client
             {
                 btnConectar.Enabled = false;
                 client.Connect(txtHost.Text, Convert.ToInt32(txtPort.Text));
-                btnDesconectar.Enabled = true;
-                btnEnviar.Enabled = true;
+                btnDesconectar.Enabled = true;        
                 txtMensagem.Enabled = true;
                 txtHost.ReadOnly = true;
                 txtPort.ReadOnly = true;
                 btnAlerta.Enabled = true;
                 btnPerigo.Enabled = true;
+                txtNome.Enabled = true;
 
                 txtStatus.Text += "Conectado ao servidor.\r\n";
             } catch
@@ -45,8 +46,9 @@ namespace Client
             btnDesconectar.Enabled = false;
             btnEnviar.Enabled = false;
             txtMensagem.Enabled = false;
-            txtHost.ReadOnly = false;
-            txtPort.ReadOnly = false;
+            txtHost.Enabled = false;
+            txtPort.Enabled = false;
+            txtNome.Enabled = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -64,26 +66,44 @@ namespace Client
 
                 int linhas = txtStatus.Lines.Length - 3;
 
-                if (linhas >= 9)
-                {
-                    txtStatus.ScrollBars = ScrollBars.Vertical;
-                }
+                if (linhas >= 9) txtStatus.ScrollBars = ScrollBars.Vertical;
             });
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            client.WriteLineAndGetReply(txtMensagem.Text, TimeSpan.FromSeconds(0));
+            try
+            {
+                if (nome == "")
+                {
+                    txtNome.Enabled = false;
+                    nome = txtNome.Text;
+                    client.WriteLine(nome);
+                }
+
+                client.WriteLineAndGetReply(txtMensagem.Text, TimeSpan.FromMilliseconds(150));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }            
         }
 
         private void btnPerigo_Click(object sender, EventArgs e)
         {
-            client.WriteLineAndGetReply("Cuidade!", TimeSpan.FromSeconds(0));
+            client.WriteLineAndGetReply("Cuidade!", TimeSpan.FromMilliseconds(150));
         }
 
         private void btnAlerta_Click(object sender, EventArgs e)
         {
-            client.WriteLineAndGetReply("Alerte", TimeSpan.FromSeconds(0));
+            client.WriteLineAndGetReply("Alerte", TimeSpan.FromMilliseconds(150));
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+            
+            if(txtNome.Text.Length > 3) btnEnviar.Enabled = true; else btnEnviar.Enabled = false;
+            
         }
     }
 }

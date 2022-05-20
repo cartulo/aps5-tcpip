@@ -40,6 +40,7 @@
             this.btnDesconectar = new System.Windows.Forms.Button();
             this.btnPerigo = new System.Windows.Forms.Button();
             this.btnAlerta = new System.Windows.Forms.Button();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtPort
@@ -95,6 +96,7 @@
             this.txtMensagem.Name = "txtMensagem";
             this.txtMensagem.Size = new System.Drawing.Size(378, 49);
             this.txtMensagem.TabIndex = 11;
+            this.txtMensagem.Text = "Uma mensagem para testes";
             // 
             // btnEnviar
             // 
@@ -167,11 +169,22 @@
             this.btnAlerta.UseVisualStyleBackColor = false;
             this.btnAlerta.Click += new System.EventHandler(this.btnAlerta_Click);
             // 
+            // txtNome
+            // 
+            this.txtNome.Enabled = false;
+            this.txtNome.Location = new System.Drawing.Point(12, 94);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(386, 20);
+            this.txtNome.TabIndex = 18;
+            this.txtNome.Text = "Roberto";
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
+            // 
             // frmClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(499, 315);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.btnAlerta);
             this.Controls.Add(this.btnPerigo);
             this.Controls.Add(this.btnDesconectar);
@@ -207,6 +220,7 @@
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Button btnPerigo;
         private System.Windows.Forms.Button btnAlerta;
+        private System.Windows.Forms.TextBox txtNome;
     }
 }
 
