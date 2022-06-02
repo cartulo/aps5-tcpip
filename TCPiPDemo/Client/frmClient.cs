@@ -14,6 +14,12 @@ namespace Client
 
         SimpleTcpClient client;
         string nome = "";
+        string[] mensagens = new string[] 
+        {
+            "Olá, estamos acionando a equipe de ajuda, fique calmo e mantenha contato.",
+            "Tudo bem",
+            "com você?"
+        };
 
         private void btnConectar_Click(object sender, EventArgs e)
         {
@@ -64,9 +70,14 @@ namespace Client
             {
                 txtStatus.Text += e.MessageString;
 
-                int linhas = txtStatus.Lines.Length - 3;
-
-                if (linhas >= 9) txtStatus.ScrollBars = ScrollBars.Vertical;
+                for (int i = 0; i < mensagens.Length; i++)
+                {
+                    if (txtStatus.Text.IndexOf(mensagens[i].ToString()) != -1)
+                    {
+                        client.WriteLineAndGetReply($"Cliente: {mensagens[i]}", TimeSpan.FromMilliseconds(350));
+                        return;
+                    }
+                }
             });
         }
 
@@ -81,7 +92,7 @@ namespace Client
                     client.WriteLine(nome);
                 }
 
-                client.WriteLineAndGetReply(txtMensagem.Text, TimeSpan.FromMilliseconds(150));
+                client.WriteLineAndGetReply(txtMensagem.Text, TimeSpan.FromMilliseconds(350));
             }
             catch (Exception ex)
             {
@@ -91,12 +102,12 @@ namespace Client
 
         private void btnPerigo_Click(object sender, EventArgs e)
         {
-            client.WriteLineAndGetReply("Cuidade!", TimeSpan.FromMilliseconds(150));
+            client.WriteLineAndGetReply("Cuidade!", TimeSpan.FromMilliseconds(350));
         }
 
         private void btnAlerta_Click(object sender, EventArgs e)
         {
-            client.WriteLineAndGetReply("Alerte", TimeSpan.FromMilliseconds(150));
+            client.WriteLineAndGetReply("Alerte", TimeSpan.FromMilliseconds(350));
         }
 
         private void txtNome_TextChanged(object sender, EventArgs e)

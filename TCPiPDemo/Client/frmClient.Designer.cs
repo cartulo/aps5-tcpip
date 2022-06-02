@@ -96,7 +96,6 @@
             this.txtMensagem.Name = "txtMensagem";
             this.txtMensagem.Size = new System.Drawing.Size(378, 49);
             this.txtMensagem.TabIndex = 11;
-            this.txtMensagem.Text = "Uma mensagem para testes";
             // 
             // btnEnviar
             // 
@@ -116,6 +115,7 @@
             this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.ReadOnly = true;
+            this.txtStatus.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtStatus.Size = new System.Drawing.Size(477, 147);
             this.txtStatus.TabIndex = 13;
             // 
@@ -176,7 +176,6 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(386, 20);
             this.txtNome.TabIndex = 18;
-            this.txtNome.Text = "Roberto";
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // frmClient

@@ -37,6 +37,7 @@ namespace TCPIPDemo
             this.txtPort = new System.Windows.Forms.TextBox();
             this.lblPort = new System.Windows.Forms.Label();
             this.txtStatus = new System.Windows.Forms.TextBox();
+            this.btnResposta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnIniciar
@@ -100,14 +101,27 @@ namespace TCPIPDemo
             this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.ReadOnly = true;
+            this.txtStatus.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtStatus.Size = new System.Drawing.Size(438, 157);
             this.txtStatus.TabIndex = 6;
+            // 
+            // btnResposta
+            // 
+            this.btnResposta.Enabled = false;
+            this.btnResposta.Location = new System.Drawing.Point(53, 196);
+            this.btnResposta.Name = "btnResposta";
+            this.btnResposta.Size = new System.Drawing.Size(75, 37);
+            this.btnResposta.TabIndex = 7;
+            this.btnResposta.Text = "Fique calmo";
+            this.btnResposta.UseVisualStyleBackColor = true;
+            this.btnResposta.Click += new System.EventHandler(this.btnResposta_Click);
             // 
             // frmServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 207);
+            this.ClientSize = new System.Drawing.Size(507, 274);
+            this.Controls.Add(this.btnResposta);
             this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.txtPort);
             this.Controls.Add(this.lblPort);
@@ -134,6 +148,7 @@ namespace TCPIPDemo
         private System.Windows.Forms.Label lblPort;
         private System.Windows.Forms.TextBox txtStatus;
         private System.Windows.Forms.Button btnParar;
+        private System.Windows.Forms.Button btnResposta;
     }
 }
 
